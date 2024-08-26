@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="icons/logo.png" alt="Music Club Logo" class="logo">
+            <h1>MUSIC CLUB NITW</h1>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#events" class="nav-link">Upcoming Events</a>
+            <a href="#team" class="nav-link">Our Team</a>
+            <a href="#gallery" class="nav-link">Photo Gallery</a>
+            <a href="#contact" class="nav-link">Contact Information</a>
+            <a href="#faqs" class="nav-link">FAQs</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to the Music Club</h2>
+            <p class="quote">"Where Music Lives"</p>
+            <div class="cta-buttons">
+                <a href="https://www.instagram.com/musicclubdenitw/" class="cta" target="_blank">Connect with Us</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Club Overview Section -->
+    <section class="overview">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>The Music Club is a vibrant community of student artists who come together to celebrate and create music. We organize free music events, workshops, and performances, providing a platform for students to showcase their talents and connect with fellow music lovers.</p>
+            <blockquote>
+                "Music brings us together, and together, we create magic."
+            </blockquote>
+        </div>
+    </section>
+    <!--------------- event section starts here ------- -->
+    <section id="events" class="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+            <div class="poster">
+                <img src="icons/upcoming.png" alt="Event Poster">
+                <div class="event-details">
+                    <h3>Event Name</h3>
+                    <p>Date: September 15, 2024</p>
+                    <p>Time: 7:00 PM</p>
+                    <p>Venue: College Auditorium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-------- know you team ------->
+    <section id="team" class="team-section">
+        <h2>Know Our Team</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <img src="icons/abhinav.png" alt="Secretary 1" class="team-photo">
+                <h3>Abhinav Kumar</h3>
+                <p class="title">General Secretary</p>
+                <p class="bio">Abhinav is a passionate musician and has been leading the club with enthusiasm. He specializes in event management and ensures everything runs smoothly.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+    
+            <div class="team-card">
+                <img src="icons/aditi.jpg" alt="Secretary 2" class="team-photo">
+                <h3>Archie Sinha</h3>
+                <p class="title">Co-General Secretary</p>
+                <p class="bio">Aditi brings her creative vision to the club, overseeing the artistic direction of our events and helping members develop their musical talents.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+    
+            <div class="team-card">
+                <img src="icons/brian.png" alt="Secretary 3" class="team-photo">
+                <h3>Brian</h3>
+                <p class="title">Assistant General Secretary</p>
+                <p class="bio">Brian is dedicated to the club's outreach, connecting with new members and organizing collaborative events with other clubs on campus.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- smooth scroll script -------->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+    
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scroll Down - Hide Navbar
+                navbar.style.top = '-80px';
+            } else {
+                // Scroll Up - Show Navbar
+                navbar.style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+        
+</body>
+</html>
